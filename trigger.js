@@ -56,7 +56,7 @@ const automatedMonthlyRabDistribution = async () => {
 };
 
 // Schedule the job to run every hour
-cron.schedule("2 * * *", () => {
+cron.schedule("2 * * * *", () => {
   console.log(
     `Running cron job to trigger automatedMonthlyRabDistribution at ${new Date().toISOString()}`
   );
