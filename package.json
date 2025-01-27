@@ -1,8 +1,22 @@
 {
+  "name": "cron-job",
+  "version": "1.0.0",
+  "description": "",
+  "main": "trigger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start index.js --name itc-backend",
+    "stop": "pm2 stop itc-backend",
+    "restart": "pm2 restart itc-backend",
+    "logs": "pm2 logs itc-backend"
+  },
   "dependencies": {
     "dotenv": "^16.4.7",
     "ethers": "^5.7.2",
     "hardhat": "^2.22.18",
     "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "pm2": "^5.4.3"
   }
 }
